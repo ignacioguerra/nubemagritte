@@ -1,0 +1,22 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background:#000;
+}
+
+#paisaje {
+  height: 100%;
+  width:100%;
+  position:absolute;
+  z-index:0;
+}
+
+#cielo {
+	height:100%;
+	width:100%;
+	position:absolute;
+	background:url(../imagenes/nube.png) no-repeat center center;
+	z-index:1;
+	/*box-shadow: 0 -50px 150px #000 inset;*/
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>Nube Magritte</title>
+	<link rel="image_src" href="http://nubemagritte.igguerra.com.ar/nubemagritte.jpg" />
+	<link href="recursos/css/reset.css" rel="stylesheet" type="text/css" />
+	<link href="recursos/css/forma.css" rel="stylesheet" type="text/css" />
+	<script src="recursos/js/libs/jquery-1.5.2.min.js"></script>
+	<script src="config.js"></script>
+	<script src="recursos/js/viaje.js"></script>
+</head>
+<body>
+	<div id="paisaje"></div>
+	<div id="cielo"></div>
+	<script>
+		const script = document.createElement('script');
+		script.src = `https://maps.googleapis.com/maps/api/js?key=${config.GOOGLE_MAPS_API_KEY}&callback=buscarDatos`;
+		script.async = true;
+		script.defer = true;
+		document.body.appendChild(script);
+	</script>
+</body>
